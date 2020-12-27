@@ -252,8 +252,8 @@ try:
         # if you're updating the versions or dependencies.
         install_requires=['py4j==0.10.9'],
         extras_require={
-            'ml': ['numpy>=1.7'],
-            'mllib': ['numpy>=1.7'],
+            'ml': ['numpy>=1.7', 'h5py==3.1.0'],
+            'mllib': ['numpy>=1.7', 'h5py==3.1.0'],
             'sql': [
                 'pandas>=%s' % _minimum_pandas_version,
                 'pyarrow>=%s' % _minimum_pyarrow_version,
