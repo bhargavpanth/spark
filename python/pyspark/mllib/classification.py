@@ -20,6 +20,10 @@ import sys
 import warnings
 
 import numpy
+try:
+  import h5py
+except ImportError:
+  h5py = None
 
 from pyspark import RDD, since
 from pyspark.mllib.common import callMLlibFunc, _py2java, _java2py

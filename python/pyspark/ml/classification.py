@@ -22,6 +22,10 @@ import uuid
 import warnings
 from abc import ABCMeta, abstractmethod, abstractproperty
 from multiprocessing.pool import ThreadPool
+try:
+  import h5py
+except ImportError:
+  h5py = None
 
 from pyspark import keyword_only, since, SparkContext
 from pyspark.ml import Estimator, Predictor, PredictionModel, Model
